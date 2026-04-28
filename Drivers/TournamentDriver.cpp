@@ -22,7 +22,7 @@ void testTournament(vector<string> mapFiles,
     {
         engine.runTournament(mapFiles, playerStrategies, numGames, maxTurns);
     }
-    catch (const std::exception &e)
+    catch (const exception &e)
     {
         logMessage(ERROR, string("Tournament error: ") + e.what());
         exit(1);
